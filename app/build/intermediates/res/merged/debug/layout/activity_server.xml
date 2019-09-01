@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA54F">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="IP : PORT"
+        android:textSize="20sp"
+        android:id="@+id/info_ip_and_port"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/togglebutton_p1"
+        android:layout_alignStart="@+id/togglebutton_p1"
+        android:layout_marginTop="31dp"
+        android:layout_toStartOf="@+id/startGame"
+        android:layout_above="@+id/togglebutton_p2"
+        android:layout_toLeftOf="@+id/startGame" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:id="@+id/mScrollView"
+        android:layout_below="@+id/startGame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog">
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="收到的消息"
+            android:textSize="20sp"
+            android:id="@+id/game_info"
+            android:layout_below="@+id/startGame"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </ScrollView>
+    <ToggleButton
+        android:id="@+id/togglebutton_p1"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:textOn="1alive"
+        android:textOff="1die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_above="@+id/togglebutton_p5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p2"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:textOn="2alive"
+        android:textOff="2die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_alignTop="@+id/togglebutton_p1"
+        android:layout_toRightOf="@+id/togglebutton_p1"
+        android:layout_toEndOf="@+id/togglebutton_p1" />
+    <ToggleButton
+        android:id="@+id/togglebutton_p3"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+
+        android:layout_alignTop="@+id/togglebutton_p2"
+        android:layout_toRightOf="@+id/togglebutton_p2"
+        android:layout_toEndOf="@+id/togglebutton_p2"
+        android:textOn="3alive"
+        android:textOff="3die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+    <ToggleButton
+        android:id="@+id/togglebutton_p4"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:textOn="4alive"
+        android:textOff="4die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_alignTop="@+id/togglebutton_p3"
+        android:layout_toRightOf="@+id/togglebutton_p3"
+        android:layout_toEndOf="@+id/togglebutton_p3" />
+    <ToggleButton
+        android:id="@+id/togglebutton_p5"
+        android:layout_width="58dp"
+        android:textOn="5alive"
+        android:textOff="5die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_height="58dp"
+        android:layout_above="@+id/togglebutton_p9"
+        android:layout_alignLeft="@+id/togglebutton_p9"
+        android:layout_alignStart="@+id/togglebutton_p9" />
+    <ToggleButton
+        android:id="@+id/togglebutton_p6"
+        android:layout_width="58dp"
+        android:textOn="6alive"
+        android:textOff="6die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_height="58dp"
+        android:layout_alignTop="@+id/togglebutton_p5"
+        android:layout_toLeftOf="@+id/togglebutton_p3"
+        android:layout_toStartOf="@+id/togglebutton_p3" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p7"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="7alive"
+        android:textOff="7die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_above="@+id/togglebutton_p11"
+        android:layout_alignLeft="@+id/togglebutton_p3"
+        android:layout_alignStart="@+id/togglebutton_p3" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p8"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="8alive"
+        android:textOff="8die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_above="@+id/togglebutton_p12"
+        android:layout_alignLeft="@+id/togglebutton_p4"
+        android:layout_alignStart="@+id/togglebutton_p4" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p9"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="9alive"
+        android:textOff="9die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_above="@+id/togglebutton_p13"
+        android:layout_toLeftOf="@+id/togglebutton_p2"
+        android:layout_toStartOf="@+id/togglebutton_p2" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p10"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="10alive"
+        android:textOff="10die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_alignTop="@+id/togglebutton_p11"
+        android:layout_toLeftOf="@+id/togglebutton_p3"
+        android:layout_toStartOf="@+id/togglebutton_p3" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p11"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="11alive"
+        android:textOff="11die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_alignTop="@+id/togglebutton_p12"
+        android:layout_alignLeft="@+id/togglebutton_p15"
+        android:layout_alignStart="@+id/togglebutton_p15" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p12"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="12alive"
+        android:textOff="12die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_above="@+id/togglebutton_p16"
+        android:layout_alignLeft="@+id/togglebutton_p16"
+        android:layout_alignStart="@+id/togglebutton_p16" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p13"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="13alive"
+        android:textOff="13die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_below="@+id/togglebutton_p11"
+        android:layout_toLeftOf="@+id/togglebutton_p2"
+        android:layout_toStartOf="@+id/togglebutton_p2" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p14"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="14alive"
+        android:textOff="14die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_below="@+id/togglebutton_p12"
+        android:layout_alignLeft="@+id/togglebutton_p10"
+        android:layout_alignStart="@+id/togglebutton_p10" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p15"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="15alive"
+        android:textOff="15die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_below="@+id/togglebutton_p12"
+        android:layout_alignLeft="@+id/togglebutton_p7"
+        android:layout_alignStart="@+id/togglebutton_p7" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_p16"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:textOn="16alive"
+        android:textOff="16die"
+        android:checked="true"
+        android:backgroundTint="#FFFF00"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/togglebutton_p8"
+        android:layout_alignStart="@+id/togglebutton_p8" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:text="start"
+        android:id="@+id/startGame"
+        android:layout_alignTop="@+id/info_ip_and_port"
+        android:layout_alignLeft="@+id/togglebutton_p3"
+        android:layout_alignStart="@+id/togglebutton_p3"
+        android:layout_toLeftOf="@+id/togglebutton_p4"
+        android:layout_toStartOf="@+id/togglebutton_p4" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="guard"
+        android:id="@+id/guard"
+        android:layout_alignBottom="@+id/kill"
+        android:layout_toLeftOf="@+id/kill"
+        android:layout_toStartOf="@+id/kill" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="kill"
+        android:id="@+id/kill"
+        android:layout_toLeftOf="@+id/save"
+        android:layout_toStartOf="@+id/save"
+        android:layout_alignTop="@+id/save"
+        android:layout_alignBottom="@+id/save" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/save"
+        android:layout_alignBaseline="@+id/poison"
+        android:layout_alignBottom="@+id/poison"
+        android:layout_toLeftOf="@+id/poison"
+        android:layout_toStartOf="@+id/poison" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="poison"
+        android:id="@+id/poison"
+        android:layout_above="@+id/togglebutton_p4"
+        android:layout_alignLeft="@+id/togglebutton_p4"
+        android:layout_alignStart="@+id/togglebutton_p4" />
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:hint="输入ID"
+        android:digits="0123456789."
+        android:id="@+id/id_info"
+        android:layout_alignTop="@+id/guard"
+        android:layout_toLeftOf="@+id/togglebutton_p2"
+        android:layout_toStartOf="@+id/togglebutton_p2" />
+
+    <Button
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:text="creat"
+        android:id="@+id/creatServer"
+        android:layout_alignTop="@+id/startGame"
+        android:layout_alignLeft="@+id/togglebutton_p4"
+        android:layout_alignStart="@+id/togglebutton_p4"
+        android:layout_alignRight="@+id/togglebutton_p4"
+        android:layout_alignEnd="@+id/togglebutton_p4" />
+
+
+
+</RelativeLayout>
